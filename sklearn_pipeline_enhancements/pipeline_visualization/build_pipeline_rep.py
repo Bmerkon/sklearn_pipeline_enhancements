@@ -35,11 +35,11 @@ def parse_sklearn_pipeline(puzzle_piece, x_position=0, y_position=0):
                 isinstance(puzzle_piece_thing, BaseEstimator):
             representation = parse_transformer(puzzle_piece_name, puzzle_piece_thing, x_position, y_position)
         else:
-            print '\nMISSING THING'
-            print puzzle_piece_name
+            print ('\nMISSING THING')
+            print (puzzle_piece_name)
             raise
     else:
-        print 'WARNING: DID NOT PASS A TUPLE'
+        print ('WARNING: DID NOT PASS A TUPLE')
 
     return representation
 

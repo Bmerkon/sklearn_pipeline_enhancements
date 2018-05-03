@@ -228,4 +228,4 @@ class InsertIntercept(TransformerMixin, BaseEstimator):
 if __name__ == '__main__':
     target = make_dataframeunion([extract_and_denull('years'), extract_and_denull('kitten')])
     for step in target.transformer_list:
-        print step
+        print(step)
